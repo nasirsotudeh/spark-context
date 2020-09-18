@@ -2,5 +2,5 @@ env
 .vscode
 .idea
 .ipynb_checkpoints
-Untitled.ipynb
-.Exercises_f/
+/Untitled.ipynb
+/Exercises_f
