@@ -16,12 +16,11 @@ if __name__ == "__main__":
     sc = SparkContext(conf = conf)
 
     July_Nasa_Logs = sc.textFile("nasa_19950701.tsv").map(lambda line: line.split("\t"))
-    Agust_Nasa_logs = sc.textFile("nasa_19950801.tsv")
-
+    Agust_Nasa_logs = sc.textFile("nasa_19950801.tsv").map(lambda line: inme.split("\t")[0])
 
     spsp = July_Nasa_Logs.map(lambda line: line[0])
     spsp.saveAsTextFile("aot10/sw.csv")
-    
+        
     
 
 

@@ -2,6 +2,8 @@ from pyspark import SparkContext
 
 if __name__ == "__main__":
 
+
+
     '''
     Create a Spark program to read the house data from in/RealEstate.csv,
     output the average price for houses with different number of bedrooms.
