@@ -7,7 +7,7 @@ conf.setAppName('spark-nltk')
 sc = SparkContext(conf=conf)
 import nltk
 # %%
-data = sc.textFile('Nixon.txt')
+data = sc.textFile('data/Nixon.txt')
 # %%
 import nltk
 # %%
